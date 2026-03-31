@@ -123,6 +123,11 @@ body {
     width: min(100%, 920px);
     margin: 1rem auto;
     border-radius: 12px;
+    text-align: center;
+}
+
+.miembros ul {
+    text-align: center;
 }
 
 .miembros_grid {
@@ -166,6 +171,36 @@ body {
     margin: 0;
     line-height: 1.6;
     font-weight: 500;
+    text-align: justify;
+}
+
+ul.p_info, ul.p_roles {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+ul.p_info li{
+    margin: 0.25rem 0 0;
+    font-size: 0.95rem;
+    color: white;
+    font-weight: 600;
+    list-style: none;
+}
+
+.miembros .info_box,
+.app_info .info_box {
+    text-align: center;
+}
+
+ul.p_roles {
+    margin: 1rem auto 0;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 400;
 }
 
 .seccion {
