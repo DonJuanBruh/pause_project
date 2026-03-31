@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+}
+
+#h_header {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #000;
+}
+
+.menu_btn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    background: rgba(23, 23, 23, 0.7);
+    border-radius: 10px;
+}
+
+.menu_icon,
+.menu_icon::before,
+.menu_icon::after {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.menu_icon::before {
+    content: '';
+    top: -7px;
+    left: 0;
+}
+
+.menu_icon::after {
+    content: '';
+    top: 7px;
+    left: 0;
+}
+
+#menu_toggle { display: none; }
+
+.navegacion {
+    position: absolute;
+    top: 70px;
+    left: 16px;
+    width: 200px;
+    padding: 8px;
+    display: none;
+    background: rgba(23, 23, 23, 0.7);
+    border-radius: 10px;
+    z-index: 15;
+}
+
+#menu_toggle:checked ~ .navegacion { display: block; }
+
+.navegacion ul { margin: 0; padding: 0; list-style: none; }
+.navegacion li { margin: 6px 0; }
+
+.navegacion a {
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.navegacion a:hover,
+.navegacion a:focus { background: rgba(255, 255, 255, 0.20); }
+
+.titulo {
+    width: 100%;
+    background: #000;
+    padding: 1rem 1rem 1.3rem;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.app_info {
+    background: #111;
+    color: white;
+    padding: 2rem 1rem;
+    margin: 1.5rem auto;
+    width: min(100%, 920px);
+    border-radius: 12px;
+}
+
+.app_info { 
+    margin-top: 30px; 
+    color: #ffffff;
+}
+
+.sub_titulo {
+    margin-top: 0;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.miembros {
+    background: #111;
+    padding: 1.5rem 1rem 2rem;
+    width: min(100%, 920px);
+    margin: 1rem auto;
+    border-radius: 12px;
+}
+
+.miembros_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-top: 0.8rem;
+}
+
+.miembro_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.miembro_foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.miembro_nombre {
+    margin: 0.25rem 0 0;
+    font-size: 0.95rem;
+    color: white;
+    font-weight: 600;
+}
+
+.info_box {
+    border: 2px solid #fff;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 0.8rem;
+}
+
+.info_box .p_info {
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.seccion {
+    min-height: 200px;
+    margin: 1rem auto;
+    width: min(100%, 920px);
+}
+
+.logo {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+footer { display: none; }
+
+

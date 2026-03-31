@@ -4,11 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pause!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header id="h_header">
+        <input type="checkbox" id="menu_toggle" aria-label="Mostrar menú" />
+        <label for="menu_toggle" class="menu_btn" aria-label="Abrir/cerrar menú">
+            <span class="menu_icon"></span>
+        </label>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#app_info" class="e_nav">¿Qué es Pause?</a></li>
+                <li><a href="#miembros" class="e_nav">Nuestro equipo</a></li>
+                <li><a href="#nuestra_empresa" class="e_nav">Nuestra empresa</a></li>
+                <li><a href="#nuestro_proyecto" class="e_nav">Nuestro proyecto</a></li>
+            </ul>
+        </nav>
+
+        <section class="titulo">
+            <img src="./img/logo_pause.jpg" alt="Logo de Pause!" class="logo">
+        </section>
+    </header>
+    <section id="miembros" class="miembros">
+        <h2 class="sub_titulo"><em>Nuestro equipo</em></h2>
+        <div class="miembros_grid miembros_grid--top">
+            <article class="miembro_card">
+                <img src="./img/juan_mican.jpg" alt="Foto Juan José Mican" class="miembro_foto">
+                <p class="miembro_nombre">Juan José Mican</p>
+            </article>
+            <article class="miembro_card">
+                <img src="./img/david_barrero.jpg" alt="Foto David Barrero" class="miembro_foto">
+                <p class="miembro_nombre">David Barrero</p>
+            </article>
+        </div>
+        <div class="miembros_grid miembros_grid--bottom">
+            <article class="miembro_card">
+                <img src="./img/juan_jimenez.jpg" alt="Foto Juan David Jiménez" class="miembro_foto">
+                <p class="miembro_nombre">Juan David Jiménez</p>
+            </article>
+            <article class="miembro_card">
+                <img src="./img/david_lucas.jpg" alt="Foto David Lucas" class="miembro_foto">
+                <p class="miembro_nombre">David Lucas</p>
+            </article>
+            <article class="miembro_card">
+                <img src="./img/jean_lozano.jpg" alt="Foto Jean Pierre Lozano" class="miembro_foto">
+                <p class="miembro_nombre">Jean Pierre Lozano</p>
+            </article>
+        </div>
+    </section>
+    <section id="app_info" class="app_info">
+        <h2 class="sub_titulo">¿Qué es "Pause!"?</h2>
+        <div class="info_box">
+            <p class="p_info">Esta aplicación nace como el aliado estratégico para universitarios y usuarios que buscan dominar su día a día en un entorno digital cada vez más saturado. Su propósito es simplificar la vida académica y personal, ofreciendo un espacio intuitivo donde el usuario puede centralizar sus proyectos, organizar sus metas y colaborar con otros de forma fluida. Al eliminar el caos de tener la información dispersa en múltiples plataformas, la herramienta permite que cada persona recupere el control de su tiempo y se enfoque en lo que realmente importa: aprender, crear y cumplir sus objetivos con menos estrés.</p><br>
+            <p class="p_info">A medida que el usuario crece, la solución crece con él, ofreciendo una estructura flexible que se adapta tanto a un trabajo de grado como a la gestión de proyectos profesionales. Es una herramienta diseñada para potenciar el talento individual a través del orden y la claridad, facilitando la transición entre la vida estudiantil y el mundo laboral. En definitiva, buscamos empoderar a las personas para que alcancen su máximo potencial mediante una tecnología sencilla, potente y pensada para los retos actuales de organización y productividad.</p>
+        </div>
+    </section>
+    <section id="nuestra_empresa" class="seccion"> 
+        <div class="info_box">
+
+        </div>
+    </section>
+    <section id="nuestro_proyecto" class="seccion"> 
+        <div class="info_box">
+            
+        </div>
+    </section>
 </body>
 <footer>
-    
+
 </footer>
 </html>
