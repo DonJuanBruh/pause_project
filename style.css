@@ -71,6 +71,18 @@ footer {
     position: absolute;
 }
 
+.navegacion {
+    position: absolute;
+    top: 70px;
+    left: 16px;
+    width: 200px;
+    padding: 8px;
+    display: none;
+    background: rgba(23, 23, 23, 0.7);
+    border-radius: 10px;
+    z-index: 15;
+}
+
 .menu_icon::before {
     content: '';
     top: -7px;
@@ -259,8 +271,19 @@ ul.p_roles {
 }
 
 .canvas_img {
-    width: 890px;
-    height: 480px;
+    width: 100%;
+    max-width: 890px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prototipo_img {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
 }
 
 .video iframe{
@@ -285,5 +308,153 @@ ul.p_roles {
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.75;
+}
+
+/* Responsive mobile styles */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+main {
+    padding: 0 1rem 2rem;
+}
+
+@media (max-width: 900px) {
+    .menu_btn {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    #h_header {
+        min-height: auto;
+        padding: 1.5rem 1rem 2rem;
+    }
+
+    .navegacion {
+        display: none;
+        width: auto;
+        left: 0;
+        right: 0;
+        top: 70px;
+        margin: 0 1rem;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .seccion,
+    .miembros {
+        width: min(100%, 96vw);
+        padding: 1.5rem 1rem;
+        margin: 1rem auto;
+    }
+
+    .sub_titulo {
+        font-size: 1.4rem;
+    }
+
+    .info_box {
+        padding: 0.9rem;
+    }
+
+    .info_box .p_info {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .miembro_foto {
+        width: 110px;
+        height: 110px;
+    }
+
+    .boton {
+        width: 100%;
+        max-width: 320px;
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+    }
+
+    .canvas_img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu_btn {
+        top: 12px;
+        left: 12px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .navegacion {
+        top: 62px;
+        margin: 0 0.75rem;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .navegacion ul {
+        display: grid;
+        gap: 0.5rem;
+    }
+
+    .miembros_grid {
+        gap: 0.5rem;
+    }
+
+    .miembro_card {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .info_box .p_info {
+        font-size: 0.95rem;
+    }
+
+    footer,
+    .texto_final {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .navegacion {
+        width: auto;
+        padding: 8px;
+        background: rgba(23, 23, 23, 0.7);
+    }
+    .navegacion ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .navegacion a {
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        width: 100%;
+    }
 }
 
