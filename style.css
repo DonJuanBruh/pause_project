@@ -1,7 +1,32 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
     background: #fff;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 #h_header {
@@ -15,6 +40,10 @@ body {
     padding: 2rem 1rem;
     background-color: #000;
 }
+
+#menu_toggle { display: none; }
+
+#menu_toggle:checked ~ .navegacion { display: block; }
 
 .menu_btn {
     position: absolute;
@@ -54,8 +83,6 @@ body {
     left: 0;
 }
 
-#menu_toggle { display: none; }
-
 .navegacion {
     position: absolute;
     top: 70px;
@@ -68,14 +95,12 @@ body {
     z-index: 15;
 }
 
-#menu_toggle:checked ~ .navegacion { display: block; }
-
 .navegacion ul { margin: 0; padding: 0; list-style: none; }
 .navegacion li { margin: 6px 0; }
 
 .navegacion a {
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     text-decoration: none;
     padding: 8px;
@@ -89,11 +114,11 @@ body {
 .navegacion a:focus { background: rgba(255, 255, 255, 0.20); }
 
 .titulo {
-    width: 100%;
-    background: #000;
-    padding: 1rem 1rem 1.3rem;
-    border-radius: 12px;
-    margin-top: 12px;
+    margin-top: 0;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
 }
 
 .seccion {
@@ -111,6 +136,7 @@ body {
     color: #ffffff;
     text-align: center;
     font-weight: bold;
+    font-size: 1.6rem;
 }
 
 .miembros {
@@ -150,7 +176,7 @@ body {
 
 .miembro_nombre {
     margin: 0.25rem 0 0;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     color: white;
     font-weight: 600;
 }
@@ -165,9 +191,19 @@ body {
 
 .info_box .p_info {
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.25rem;
     font-weight: 500;
     text-align: justify;
+}
+
+.miembro_nombre {
+    font-size: 1rem;
+}
+
+.miembros .info_box,
+.app_info .info_box {
+    text-align: center;
 }
 
 ul.p_info, ul.p_roles {
@@ -179,15 +215,10 @@ ul.p_info, ul.p_roles {
 
 ul.p_info li{
     margin: 0.25rem 0 0;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     color: white;
     font-weight: 600;
     list-style: none;
-}
-
-.miembros .info_box,
-.app_info .info_box {
-    text-align: center;
 }
 
 ul.p_roles {
@@ -197,25 +228,16 @@ ul.p_roles {
     text-align: left;
     color: #ffffff;
     font-weight: 400;
+    font-size: 1.15rem;
 }
-
 
 .logo {
     display: block;
     max-width: 400px;
     width: 100%;
     height: auto;
-    margin-top: 60px;
     margin: 0 auto;
     border-radius: 10px;
-}
-iframe {
-    background: #111;
-    display: block;
-    color: white;
-    padding: 2rem 1rem;
-    width: min(100%, 850px);
-    border-radius: 5px;
 }
 
 .boton {
@@ -225,26 +247,43 @@ iframe {
     color: #000;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 17px;
     margin-top: 1rem;
-    transition:background-color 0.25s, color 0.25s;
-}
-.boton:visited{
-    color:#000;
-    background-color: #fff;
+    transition:background-color 0.2s, color 0.2s;
 }
 
 .boton:hover{ 
-    background: #2c383a;
+    background: #575757;
     color: #fff;
 }
 
-.boton:focus {
-  background: #fff;
-  outline: 2px solid #2c383a;
-  outline-offset: 4px;
+.canvas_img {
+    width: 890px;
+    height: 480px;
 }
 
-footer { display: none; }
+.video iframe{
+    width: 100%;      
+    max-width: 672px;
+    height: 380px; 
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+}
 
+.final_pagina {
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.75;
+}
+
+.texto_final {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.75;
+}
 
